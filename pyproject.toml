@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dr-joker"
+version = "1.0.0"
+description = "Autonomous Zero-Touch Practical Exam Reverse-Engineering Swarm"
+readme = "README.md"
+authors = [{ name = "Antigravity OSPE Architecture Team" }]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "pymupdf>=1.23.0",
+    "pillow>=10.0.0"
+]
+
+[project.scripts]
+dr-joker = "scripts.cli:main"
