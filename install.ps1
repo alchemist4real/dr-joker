@@ -4,7 +4,7 @@
 # ==============================================================================
 
 $ErrorActionPreference = "Stop"
-$RepoUrl = "https://github.com/antigravity-community/dr-joker.git"
+$RepoUrl = "https://github.com/alchemist4real/dr-joker.git"
 $SkillName = "dr-joker"
 
 Write-Host "🃏 Installing dr.joker Assessment Swarm..." -ForegroundColor Cyan

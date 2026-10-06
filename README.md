@@ -14,29 +14,29 @@ Install `dr.joker` with a single command on your platform:
 
 ### 🪟 Windows (PowerShell) — Antigravity / Claude / Codex
 ```powershell
-irm https://raw.githubusercontent.com/antigravity-community/dr-joker/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/alchemist4real/dr-joker/main/install.ps1 | iex
 ```
 
 ### 🐧 Linux / macOS / WSL (Bash) — Antigravity / Claude / Codex
 ```bash
-curl -fsSL https://raw.githubusercontent.com/antigravity-community/dr-joker/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/alchemist4real/dr-joker/main/install.sh | bash
 ```
 
 ### 🤖 Claude Code Native
 ```bash
-npx @anthropic-ai/claude-code skill add https://github.com/antigravity-community/dr-joker
+npx @anthropic-ai/claude-code skill add https://github.com/alchemist4real/dr-joker
 ```
 
 ### 📦 Manual Git Clone (Universal)
 ```bash
 # For Google Antigravity
-git clone https://github.com/antigravity-community/dr-joker.git ~/.gemini/skills/dr-joker
+git clone https://github.com/alchemist4real/dr-joker.git ~/.gemini/skills/dr-joker
 
 # For Claude Code
-git clone https://github.com/antigravity-community/dr-joker.git ~/.claude/skills/dr-joker
+git clone https://github.com/alchemist4real/dr-joker.git ~/.claude/skills/dr-joker
 
 # For OpenAI Codex
-git clone https://github.com/antigravity-community/dr-joker.git ~/.codex/skills/dr-joker
+git clone https://github.com/alchemist4real/dr-joker.git ~/.codex/skills/dr-joker
 ```
 
 ---

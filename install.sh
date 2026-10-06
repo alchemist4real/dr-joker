@@ -5,7 +5,7 @@
 # ==============================================================================
 set -e
 
-REPO_URL="https://github.com/antigravity-community/dr-joker.git"
+REPO_URL="https://github.com/alchemist4real/dr-joker.git"
 SKILL_NAME="dr-joker"
 
 echo "🃏 Installing dr.joker Assessment Swarm..."
