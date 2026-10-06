@@ -4,6 +4,9 @@ dr.joker CLI - Command Line Interface for Autonomous Assessment Engine
 
 import os
 import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 import argparse
 import json
 from scripts.orchestrator import JokerOrchestrator
@@ -39,7 +42,7 @@ def main():
             parser.print_help()
             sys.exit(1)
             
-        print("\n🃏 [dr.joker] Launching Autonomous Assessment Engine...")
+        print("\n[dr.joker] Launching Autonomous Assessment Engine...")
         orchestrator = JokerOrchestrator(
             exam_dir=args.exam_dir,
             module_dir=args.module_dir,
@@ -56,13 +59,13 @@ def main():
     elif args.subcommand == "scan":
         orchestrator = JokerOrchestrator(exam_dir=args.exam_dir, module_dir=args.module_dir)
         vars_res = orchestrator.scan_topology()
-        print("\n🃏 [dr.joker] Physical Topology Discovered:")
+        print("\n[dr.joker] Physical Topology Discovered:")
         print(json.dumps(vars_res, indent=2))
 
     elif args.subcommand == "audit":
         orchestrator = JokerOrchestrator(exam_dir=args.exam_dir, module_dir=".")
         vars_res = orchestrator.scan_topology()
-        print(f"\n🃏 [dr.joker] Audited {vars_res['N_exam']} exam files.")
+        print(f"\n[dr.joker] Audited {vars_res['N_exam']} exam files.")
 
 if __name__ == "__main__":
     main()
